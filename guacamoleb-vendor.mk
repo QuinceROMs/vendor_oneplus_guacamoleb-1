@@ -509,19 +509,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin
 
 PRODUCT_PACKAGES += \
-    audio.primary.msmnile_odm \
     camera.qcom \
     com.qti.chi.override \
+    audio.primary.msmnile_odm \
     com.qti.sensor.gc5035 \
     com.qti.sensor.imx471 \
     com.qti.sensor.imx586 \
     libarcsoft_dualcam_bokeh_api \
-    libarcsoft_dualcam_bokeh_api_vendor_so \
     libarcsoft_dualcam_refocus_left \
-    libarcsoft_dualcam_refocus_left_vendor_so \
     libarcsoft_dualcam_refocus_preview \
-    libarcsoft_dualcam_refocus_preview_vendor_so \
     libarcsoft_dualcam_refocus_right \
-    libarcsoft_dualcam_refocus_right_vendor_so \
-    libarcsoft_dualcam_refocus_uw \
-    libarcsoft_dualcam_refocus_uw_vendor_so
+    libarcsoft_dualcam_refocus_uw
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_libarcsoft_dualcam_bokeh_api_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_left_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_preview_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_right_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_uw_so
