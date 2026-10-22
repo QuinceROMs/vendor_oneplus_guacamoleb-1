@@ -148,6 +148,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.tuned.semco_imx586_18821.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.semco_imx586_18821.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.tuned.sunny_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sunny_imx471.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.tuned.sunny_imx471_18821.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sunny_imx471_18821.bin \
+    vendor/oneplus/guacamoleb/proprietary/odm/lib64/goldResult.bin:$(TARGET_COPY_OUT_ODM)/lib64/goldResult.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/vendor/firmware/gfp9508.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/gfp9508.b00 \
     vendor/oneplus/guacamoleb/proprietary/odm/vendor/firmware/gfp9508.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/gfp9508.b01 \
     vendor/oneplus/guacamoleb/proprietary/odm/vendor/firmware/gfp9508.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/gfp9508.b02 \
@@ -508,7 +509,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin
 
 PRODUCT_PACKAGES += \
+    camera.qcom \
+    com.qti.chi.override \
     audio.primary.msmnile_odm \
     com.qti.sensor.gc5035 \
     com.qti.sensor.imx471 \
-    com.qti.sensor.imx586
+    com.qti.sensor.imx586 \
+    libarcsoft_dualcam_bokeh_api \
+    libarcsoft_dualcam_refocus_left \
+    libarcsoft_dualcam_refocus_preview \
+    libarcsoft_dualcam_refocus_right \
+    libarcsoft_dualcam_refocus_uw
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_libarcsoft_dualcam_bokeh_api_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_left_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_preview_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_right_so \
+    vendor_lib64_libarcsoft_dualcam_refocus_uw_so
